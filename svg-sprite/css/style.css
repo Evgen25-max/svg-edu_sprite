@@ -1,0 +1,161 @@
+:root {
+  --text-color: #000;
+  --last-word: #FF7A00;
+
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-bold-webfont.woff') format('woff');
+  font-display: swap;
+  font-weight: 700;
+
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensans-italic-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-italic-webfont.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-regular-webfont.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-semibold-webfont.woff') format('woff');
+  font-display: swap;
+  font-weight: 600;
+
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-family: 'OpenSans';
+  font-size: 18px;
+  font-weight: 400;
+  background-color: var(--color-html-background);
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  color: var(--text-color);
+  background-color: var(--color-background-body);
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  margin: 0 auto 0 auto;
+  width: 1440px;
+}
+
+.how__container {
+  padding: 35px 57px 35px 57px;
+}
+
+.how__title {
+  margin-bottom: 38px;
+  font: 700 40px/54.47px OpenSans;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.how__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item__title {
+  margin-bottom: 5px;
+  font: 700 30px/40.85px OpenSans;
+  color: var(--text-color);
+}
+
+.item__title_last-word {
+  color: var(--last-word);
+}
+
+.item__text {
+  font: 400 16px/28px OpenSans;
+  color: var(--text-color);
+}
+
+.how__icon {
+  margin-bottom: 19px;
+}
+
+.how__item:not(:last-child) {
+  margin-right: 100px;
+}
+
+.integration__data {
+  display: inline-block;
+  width: 600px;
+  margin-right: 175px;
+}
+
+.integration__title {
+  margin-bottom: 10px;
+  font: 700 40px/54.47px OpenSans;
+  color: var(--text-color);
+}
+
+.integration__text {
+  font: 400 16px/28px OpenSans;
+  color: var(--text-color);
+}
+
+.integration__container {
+  display: flex;
+  padding: 67px 57px 56px 57px;
+}
+
+.integration__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.integration__icons {
+  display: inline-block;
+  flex-shrink: 0;
+  padding-top: 31px;
+  width: 550px;
+}
+
+.integration__item:not(:nth-child(4n + 4)) {
+  margin-right: 90px;
+}
+
+.integration__item:last-child {
+  margin-right: 19px;
+}
+
+.integration__item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 28px;
+}
